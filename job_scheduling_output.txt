@@ -1,0 +1,31 @@
+JOB LIST:
+ID    Deadline    Profit    Time
+J1    2           100       1
+J2    1           19        1
+J3    2           27        1
+J4    1           25        1
+J5    3           15        1
+
+AVAILABLE MACHINES: 1
+
+SCHEDULING STEPS:
+Scheduled Job J1 at slot 2
+Scheduled Job J3 at slot 1
+Skipped Job J4 (No slot available)
+Skipped Job J2 (No slot available)
+Scheduled Job J5 at slot 3
+
+FINAL SCHEDULE:
+Slot 1: J3
+Slot 2: J1
+Slot 3: J5
+
+TOTAL PROFIT: 142
+
+CONSTRAINTS SATISFIED:
+- Only one job per time slot
+- Deadlines considered while scheduling
+- Maximum profit achieved using greedy approach
+
+TIME COMPLEXITY:
+O(n log n + n*d)
